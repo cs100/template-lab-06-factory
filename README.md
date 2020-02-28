@@ -6,11 +6,13 @@
 
 In this lab you will create a factory which can take in user input and generate a correct expression tree, represented by a `Base*` root node which will be returned to the caller. Your factory should have a single public method `Base* parse(char** input, int length)`. You will need to parse the inputs to generate the corresponding expression tree, and can assume there are no parenthesies and spaces between each number and operator. You also do not need to consider precedence for the operations and can assume they should be executed from left to right. For example, the input `3 + 2 * 6` would result in `(3 + 2) * 6 = 30` rather than the normal `3 + (2 * 6) = 15` In the case that the input is invalid you should print an error and return back a `nullptr` to the caller.
 
-> Note: for this lab you only need to be able to parse numbers and the operators defined in the composite pattern lab. You do not need to parse additional features such as the decorators.
+> Note: For this lab you only need to be able to parse numbers and the operators defined in the composite pattern lab. You do not need to parse additional features such as the decorators.
 
 ## Main
 
 For this lab you should have both a main executable and a test executable. Your main executable should be named `calculator` and should take the `char** argv` and the `int argc` input to main and pass it to the factory. The factory should then convert it to an expression tree, and then you should print the `stringify()` and `evaluate()` values of the generated expression tree back to the user.
+
+> Note: When you run something like `./calculator 4 * 3` or `./calculator 4 ** 3`, Bash will see the `*` and treat it as a [wildcard operator](https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm). To avoid this issue, just prepend the `*` character with `\` on the command line. So, you should run `./calculator 4 \* 3` or `./calculator 4 \*\* 3` instead of the commands above.
 
 ## Unit Testing
 
