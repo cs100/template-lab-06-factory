@@ -15,7 +15,7 @@ For this lab you should have both a main executable and a test executable. Your 
 
 ## Unit Testing
 
-When creating unit tests for the factor you can generate mock user input similar to the way it was created in the unit testing lab. Make sure to test that all combinations of operators are being parsed correctly and that it can generate trees with versious numbers of operators and operands. You should also test that your factory correctly returns a `nullptr` when invalid input is provided.
+When creating unit tests for the factory you can generate mock user input similar to the way it was created in the unit testing lab. Make sure to test that all combinations of operators are being parsed correctly and that it can generate trees with various numbers of operators and operands. You should also test that your factory correctly returns a `nullptr` when invalid input is provided.
 
 ## Submission
 
